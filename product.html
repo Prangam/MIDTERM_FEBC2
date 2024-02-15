@@ -1,0 +1,272 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Bootstrap demo</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+  <nav class="navbar navbar-expand-lg bg-body-tertiary marginNavbar" data-bs-theme="dark">
+    <div class="container">
+      <a class="navbar-brand" href="#">
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-camera-fill"
+          viewBox="0 0 16 16">
+          <path d="M10.5 8.5a2.5 2.5 0 1 1-5 0 2.5 2.5 0 0 1 5 0" />
+          <path
+            d="M2 4a2 2 0 0 0-2 2v6a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V6a2 2 0 0 0-2-2h-1.172a2 2 0 0 1-1.414-.586l-.828-.828A2 2 0 0 0 9.172 2H6.828a2 2 0 0 0-1.414.586l-.828.828A2 2 0 0 1 3.172 4zm.5 2a.5.5 0 1 1 0-1 .5.5 0 0 1 0 1m9 2.5a3.5 3.5 0 1 1-7 0 3.5 3.5 0 0 1 7 0" />
+        </svg>
+        TurkCamera
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link" aria-current="page" href="/index.html">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="/product.html">Product</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" aria-current="page" href="/cart.html">Cart</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" aria-current="page" href="/checkout.html">Checkout</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <div class="container-xl text-center">
+    <form class="d-flex" role="search">
+      <input class="form-control me-2" type="search" placeholder="ค้นหาสินค้าจากทั้งร้านได้ที่นี่..." aria-label="Search">
+      <button class="btn btn-outline-dark" type="submit">
+        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-search"
+          viewBox="0 0 16 16">
+          <path
+            d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001q.044.06.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1 1 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0" />
+        </svg>
+      </button>
+    </form>
+    <br />
+    <div class="row align-items-start">
+      <div class="col">
+        <div class="card" style="width: 18rem;">
+          <img src="./image/1.webp" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">กล้อง LomoApparat 21 มม. Wide-angle รุ่น Neubau</h5>
+            <p class="card-text">กล้อง LomoApparat เป็นกล้องฟิล์มขนาด 35 มม. ที่เต็มไปด้วยความสร้างสรรค์, ให้ภาพมุมกว้างแบบพิเศษ และใช้งานง่ายสุดๆ ผ่านฟิล์ม 35 มม. ที่หาได้ทั่วไป</p>
+            <h5>THB3,383</h5>
+            <button type="button" class="btn" fdprocessedid="ksgl78" id="like" onclick=fav()>
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"  class="bi bi-heart"
+                viewBox="0 0 16 16">
+                <path
+                  d="m8 2.748-.717-.737C5.6.281 2.514.878 1.4 3.053c-.523 1.023-.641 2.5.314 4.385.92 1.815 2.834 3.989 6.286 6.357 3.452-2.368 5.365-4.542 6.286-6.357.955-1.886.838-3.362.314-4.385C13.486.878 10.4.28 8.717 2.01zM8 15C-7.333 4.868 3.279-3.04 7.824 1.143q.09.083.176.171a3 3 0 0 1 .176-.17C12.72-3.042 23.333 4.867 8 15">
+                </path>
+              </svg>
+            </button>
+            <a href="#" class="btn btn-dark"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                fill="currentColor" class="bi bi-cart-dash" viewBox="0 0 16 16">
+                <path d="M6.5 7a.5.5 0 0 0 0 1h4a.5.5 0 0 0 0-1z" />
+                <path
+                  d="M.5 1a.5.5 0 0 0 0 1h1.11l.401 1.607 1.498 7.985A.5.5 0 0 0 4 12h1a2 2 0 1 0 0 4 2 2 0 0 0 0-4h7a2 2 0 1 0 0 4 2 2 0 0 0 0-4h1a.5.5 0 0 0 .491-.408l1.5-8A.5.5 0 0 0 14.5 3H2.89l-.405-1.621A.5.5 0 0 0 2 1zm3.915 10L3.102 4h10.796l-1.313 7zM6 14a1 1 0 1 1-2 0 1 1 0 0 1 2 0m7 0a1 1 0 1 1-2 0 1 1 0 0 1 2 0" />
+              </svg> เพิ่มในตะกร้าสินค้า</a>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card" style="width: 18rem;">
+          <img src="./image/2.webp" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">กล้อง LomoApparat รุ่น Chiyoda</h5>
+            <p class="card-text">กล้อง LomoApparat เป็นกล้องฟิล์มขนาด 35 มม. ที่เต็มไปด้วยความสร้างสรรค์, ให้ภาพมุมกว้างแบบพิเศษ และใช้งานง่ายสุดๆ ผ่านฟิล์ม 35 มม. ที่หาได้ทั่วไป</p>
+            <h5>THB3,383</h5>
+            <button type="button" class="btn" fdprocessedid="ksgl78" id="like2" onclick=fav2()>
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"  class="bi bi-heart"
+                viewBox="0 0 16 16">
+                <path
+                  d="m8 2.748-.717-.737C5.6.281 2.514.878 1.4 3.053c-.523 1.023-.641 2.5.314 4.385.92 1.815 2.834 3.989 6.286 6.357 3.452-2.368 5.365-4.542 6.286-6.357.955-1.886.838-3.362.314-4.385C13.486.878 10.4.28 8.717 2.01zM8 15C-7.333 4.868 3.279-3.04 7.824 1.143q.09.083.176.171a3 3 0 0 1 .176-.17C12.72-3.042 23.333 4.867 8 15">
+                </path>
+              </svg>
+            </button>
+            <a href="#" class="btn btn-dark"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                fill="currentColor" class="bi bi-cart-dash" viewBox="0 0 16 16">
+                <path d="M6.5 7a.5.5 0 0 0 0 1h4a.5.5 0 0 0 0-1z" />
+                <path
+                  d="M.5 1a.5.5 0 0 0 0 1h1.11l.401 1.607 1.498 7.985A.5.5 0 0 0 4 12h1a2 2 0 1 0 0 4 2 2 0 0 0 0-4h7a2 2 0 1 0 0 4 2 2 0 0 0 0-4h1a.5.5 0 0 0 .491-.408l1.5-8A.5.5 0 0 0 14.5 3H2.89l-.405-1.621A.5.5 0 0 0 2 1zm3.915 10L3.102 4h10.796l-1.313 7zM6 14a1 1 0 1 1-2 0 1 1 0 0 1 2 0m7 0a1 1 0 1 1-2 0 1 1 0 0 1 2 0" />
+              </svg> เพิ่มในตะกร้าสินค้า</a>     
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card" style="width: 18rem;">
+          <img src="./image/3.webp" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">กล้อง LomoApparat 21 มม. Wide-angle</h5>
+            <p class="card-text">กล้อง LomoApparat เป็นกล้องฟิล์มขนาด 35 มม. ที่เต็มไปด้วยความสร้างสรรค์, ให้ภาพมุมกว้างแบบพิเศษ และใช้งานง่ายสุดๆ ผ่านฟิล์ม 35 มม. ที่หาได้ทั่วไป</p>
+            <h5>THB2,958</h5>
+            <button type="button" class="btn" fdprocessedid="ksgl78" id="like3" onclick=fav3()>
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"  class="bi bi-heart"
+                viewBox="0 0 16 16">
+                <path
+                  d="m8 2.748-.717-.737C5.6.281 2.514.878 1.4 3.053c-.523 1.023-.641 2.5.314 4.385.92 1.815 2.834 3.989 6.286 6.357 3.452-2.368 5.365-4.542 6.286-6.357.955-1.886.838-3.362.314-4.385C13.486.878 10.4.28 8.717 2.01zM8 15C-7.333 4.868 3.279-3.04 7.824 1.143q.09.083.176.171a3 3 0 0 1 .176-.17C12.72-3.042 23.333 4.867 8 15">
+                </path>
+              </svg>
+            </button>
+            <a href="#" class="btn btn-dark"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                fill="currentColor" class="bi bi-cart-dash" viewBox="0 0 16 16">
+                <path d="M6.5 7a.5.5 0 0 0 0 1h4a.5.5 0 0 0 0-1z" />
+                <path
+                  d="M.5 1a.5.5 0 0 0 0 1h1.11l.401 1.607 1.498 7.985A.5.5 0 0 0 4 12h1a2 2 0 1 0 0 4 2 2 0 0 0 0-4h7a2 2 0 1 0 0 4 2 2 0 0 0 0-4h1a.5.5 0 0 0 .491-.408l1.5-8A.5.5 0 0 0 14.5 3H2.89l-.405-1.621A.5.5 0 0 0 2 1zm3.915 10L3.102 4h10.796l-1.313 7zM6 14a1 1 0 1 1-2 0 1 1 0 0 1 2 0m7 0a1 1 0 1 1-2 0 1 1 0 0 1 2 0" />
+              </svg> เพิ่มในตะกร้าสินค้า</a>       
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card" style="width: 18rem;">
+          <img src="./image/4.webp" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">กล้อง Diana F+ พร้อมแฟลช รุ่น CMYK</h5>
+            <p class="card-text">เก็บภาพความทรงจำผ่านกล้องสีสันสดใสอย่าง Diana F+ รุ่น CMYK มาพร้อมบอดี้ที่ได้รับแรงบันดาลใจมาจากระบบสี CMYK (สีฟ้า, สีแดงอมม่วง, สีเหลือง และสีดำ)</p>
+            <h5>THB3,315</h5>
+            <button type="button" class="btn" fdprocessedid="ksgl78" id="like4" onclick=fav4()>
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"  class="bi bi-heart"
+                viewBox="0 0 16 16">
+                <path
+                  d="m8 2.748-.717-.737C5.6.281 2.514.878 1.4 3.053c-.523 1.023-.641 2.5.314 4.385.92 1.815 2.834 3.989 6.286 6.357 3.452-2.368 5.365-4.542 6.286-6.357.955-1.886.838-3.362.314-4.385C13.486.878 10.4.28 8.717 2.01zM8 15C-7.333 4.868 3.279-3.04 7.824 1.143q.09.083.176.171a3 3 0 0 1 .176-.17C12.72-3.042 23.333 4.867 8 15">
+                </path>
+              </svg>
+            </button>
+            <a href="#" class="btn btn-dark"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                fill="currentColor" class="bi bi-cart-dash" viewBox="0 0 16 16">
+                <path d="M6.5 7a.5.5 0 0 0 0 1h4a.5.5 0 0 0 0-1z" />
+                <path
+                  d="M.5 1a.5.5 0 0 0 0 1h1.11l.401 1.607 1.498 7.985A.5.5 0 0 0 4 12h1a2 2 0 1 0 0 4 2 2 0 0 0 0-4h7a2 2 0 1 0 0 4 2 2 0 0 0 0-4h1a.5.5 0 0 0 .491-.408l1.5-8A.5.5 0 0 0 14.5 3H2.89l-.405-1.621A.5.5 0 0 0 2 1zm3.915 10L3.102 4h10.796l-1.313 7zM6 14a1 1 0 1 1-2 0 1 1 0 0 1 2 0m7 0a1 1 0 1 1-2 0 1 1 0 0 1 2 0" />
+              </svg> เพิ่มในตะกร้าสินค้า</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <br />
+
+    <div class="row align-items-start">
+      <div class="col">
+        <div class="card" style="width: 18rem;">
+          <img src="./image/5.webp" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">กล้อง Lomo’Instant พร้อมเลนส์เสริม รุ่น Boston</h5>
+            <p class="card-text">กล้อง Instant รุ่นนี้โดดเด่นด้วยบอดี้สีแดงสดตัดกับสีน้ำเงินสะดุดตา มาพร้อมโหมดถ่ายภาพสามโหมดและชุดเลนส์เสริมสุดพิเศษ ทำให้คุณสามารถเก็บความทรงจำในรูปแบบของภาพ Instant ได้อย่างน่าประทับใจ</p>
+            <h5>THB5,280</h5>
+            <button type="button" class="btn" fdprocessedid="ksgl78" id="like5" onclick=fav5()>
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"  class="bi bi-heart"
+                viewBox="0 0 16 16">
+                <path
+                  d="m8 2.748-.717-.737C5.6.281 2.514.878 1.4 3.053c-.523 1.023-.641 2.5.314 4.385.92 1.815 2.834 3.989 6.286 6.357 3.452-2.368 5.365-4.542 6.286-6.357.955-1.886.838-3.362.314-4.385C13.486.878 10.4.28 8.717 2.01zM8 15C-7.333 4.868 3.279-3.04 7.824 1.143q.09.083.176.171a3 3 0 0 1 .176-.17C12.72-3.042 23.333 4.867 8 15">
+                </path>
+              </svg>
+            </button>
+            <a href="#" class="btn btn-dark"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                fill="currentColor" class="bi bi-cart-dash" viewBox="0 0 16 16">
+                <path d="M6.5 7a.5.5 0 0 0 0 1h4a.5.5 0 0 0 0-1z" />
+                <path
+                  d="M.5 1a.5.5 0 0 0 0 1h1.11l.401 1.607 1.498 7.985A.5.5 0 0 0 4 12h1a2 2 0 1 0 0 4 2 2 0 0 0 0-4h7a2 2 0 1 0 0 4 2 2 0 0 0 0-4h1a.5.5 0 0 0 .491-.408l1.5-8A.5.5 0 0 0 14.5 3H2.89l-.405-1.621A.5.5 0 0 0 2 1zm3.915 10L3.102 4h10.796l-1.313 7zM6 14a1 1 0 1 1-2 0 1 1 0 0 1 2 0m7 0a1 1 0 1 1-2 0 1 1 0 0 1 2 0" />
+              </svg> เพิ่มในตะกร้าสินค้า</a>
+           
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card" style="width: 18rem;">
+          <img src="./image/6.webp" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">กล้อง Lomo’Instant Automat Glass รุ่น Magellan</h5>
+            <p class="card-text">กล้อง Instant ระบบอัตโนมัติเต็มรูปแบบตัวแรกของโลกที่มีเลนส์แก้วและให้ภาพมุมกว้าง คมชัด โดดเด่นกว่าที่เคยเป็นมา แรงบันดาลใจมากจากการดูดาว ที่รู้สึกตื่นเต้นเมื่อได้มองออกไป</p>
+            <br/>
+            <h5>THB6,120</h5>
+            <button type="button" class="btn" fdprocessedid="ksgl78" id="like6" onclick=fav6()>
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"  class="bi bi-heart"
+                viewBox="0 0 16 16">
+                <path
+                  d="m8 2.748-.717-.737C5.6.281 2.514.878 1.4 3.053c-.523 1.023-.641 2.5.314 4.385.92 1.815 2.834 3.989 6.286 6.357 3.452-2.368 5.365-4.542 6.286-6.357.955-1.886.838-3.362.314-4.385C13.486.878 10.4.28 8.717 2.01zM8 15C-7.333 4.868 3.279-3.04 7.824 1.143q.09.083.176.171a3 3 0 0 1 .176-.17C12.72-3.042 23.333 4.867 8 15">
+                </path>
+              </svg>
+            </button>
+            <a href="#" class="btn btn-dark"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                fill="currentColor" class="bi bi-cart-dash" viewBox="0 0 16 16">
+                <path d="M6.5 7a.5.5 0 0 0 0 1h4a.5.5 0 0 0 0-1z" />
+                <path
+                  d="M.5 1a.5.5 0 0 0 0 1h1.11l.401 1.607 1.498 7.985A.5.5 0 0 0 4 12h1a2 2 0 1 0 0 4 2 2 0 0 0 0-4h7a2 2 0 1 0 0 4 2 2 0 0 0 0-4h1a.5.5 0 0 0 .491-.408l1.5-8A.5.5 0 0 0 14.5 3H2.89l-.405-1.621A.5.5 0 0 0 2 1zm3.915 10L3.102 4h10.796l-1.313 7zM6 14a1 1 0 1 1-2 0 1 1 0 0 1 2 0m7 0a1 1 0 1 1-2 0 1 1 0 0 1 2 0" />
+              </svg> เพิ่มในตะกร้าสินค้า</a>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card" style="width: 18rem;">
+          <img src="./image/7.webp" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">กล้อง Lomo’Instant Automat Glass รุ่น Serengeti</h5>
+            <p class="card-text">กล้อง Instant สำหรับนักผจญภัยสไตล์อนาล็อก ที่ได้รับแรงบันดาลใจมาจากความสวยงามของอุทยานแห่งชาติ Serengeti</p>
+            <br/><br/>
+            <h5>THB7,020</h5>
+            <button type="button" class="btn" fdprocessedid="ksgl78" id="like7" onclick=fav7()>
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"  class="bi bi-heart"
+                viewBox="0 0 16 16">
+                <path
+                  d="m8 2.748-.717-.737C5.6.281 2.514.878 1.4 3.053c-.523 1.023-.641 2.5.314 4.385.92 1.815 2.834 3.989 6.286 6.357 3.452-2.368 5.365-4.542 6.286-6.357.955-1.886.838-3.362.314-4.385C13.486.878 10.4.28 8.717 2.01zM8 15C-7.333 4.868 3.279-3.04 7.824 1.143q.09.083.176.171a3 3 0 0 1 .176-.17C12.72-3.042 23.333 4.867 8 15">
+                </path>
+              </svg>
+            </button>
+            <a href="#" class="btn btn-dark"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                fill="currentColor" class="bi bi-cart-dash" viewBox="0 0 16 16">
+                <path d="M6.5 7a.5.5 0 0 0 0 1h4a.5.5 0 0 0 0-1z" />
+                <path
+                  d="M.5 1a.5.5 0 0 0 0 1h1.11l.401 1.607 1.498 7.985A.5.5 0 0 0 4 12h1a2 2 0 1 0 0 4 2 2 0 0 0 0-4h7a2 2 0 1 0 0 4 2 2 0 0 0 0-4h1a.5.5 0 0 0 .491-.408l1.5-8A.5.5 0 0 0 14.5 3H2.89l-.405-1.621A.5.5 0 0 0 2 1zm3.915 10L3.102 4h10.796l-1.313 7zM6 14a1 1 0 1 1-2 0 1 1 0 0 1 2 0m7 0a1 1 0 1 1-2 0 1 1 0 0 1 2 0" />
+              </svg> เพิ่มในตะกร้าสินค้า</a>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card" style="width: 18rem;">
+          <img src="./image/8.webp" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">กล้อง Lomo’Instant พร้อมเลนส์เสริม รุ่น Opbeni</h5>
+            <p class="card-text">ถ่ายทอดวัฒนธรรมอันงดงาม ผสมผสานความสง่างามแบบร่วมสมัย ผ่านผลงานของศิลปินชาวจีน Opbeni</p>
+            <br/><br/><br/>
+            <h5>THB5,280</h5>
+            <button type="button" class="btn" fdprocessedid="ksgl78" id="like8" onclick=fav8()>
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"  class="bi bi-heart"
+                viewBox="0 0 16 16">
+                <path
+                  d="m8 2.748-.717-.737C5.6.281 2.514.878 1.4 3.053c-.523 1.023-.641 2.5.314 4.385.92 1.815 2.834 3.989 6.286 6.357 3.452-2.368 5.365-4.542 6.286-6.357.955-1.886.838-3.362.314-4.385C13.486.878 10.4.28 8.717 2.01zM8 15C-7.333 4.868 3.279-3.04 7.824 1.143q.09.083.176.171a3 3 0 0 1 .176-.17C12.72-3.042 23.333 4.867 8 15">
+                </path>
+              </svg>
+            </button>
+            <a href="#" class="btn btn-dark"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                fill="currentColor" class="bi bi-cart-dash" viewBox="0 0 16 16">
+                <path d="M6.5 7a.5.5 0 0 0 0 1h4a.5.5 0 0 0 0-1z" />
+                <path
+                  d="M.5 1a.5.5 0 0 0 0 1h1.11l.401 1.607 1.498 7.985A.5.5 0 0 0 4 12h1a2 2 0 1 0 0 4 2 2 0 0 0 0-4h7a2 2 0 1 0 0 4 2 2 0 0 0 0-4h1a.5.5 0 0 0 .491-.408l1.5-8A.5.5 0 0 0 14.5 3H2.89l-.405-1.621A.5.5 0 0 0 2 1zm3.915 10L3.102 4h10.796l-1.313 7zM6 14a1 1 0 1 1-2 0 1 1 0 0 1 2 0m7 0a1 1 0 1 1-2 0 1 1 0 0 1 2 0" />
+              </svg> เพิ่มในตะกร้าสินค้า</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <nav class="navbar navbar-expand-lg bottombar">
+    <div class="container" >
+      <div style="color:rgb(87, 85, 85);">You are currently in this store: Thailand / ไทย. If you want to ship somewhere else please pick a country or market in the dropdown below.</div>
+    </div>
+  </nav>
+  <script src="script.js"></script>
+</body>
+
+</html>

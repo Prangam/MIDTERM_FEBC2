@@ -1,0 +1,68 @@
+.marginNavbar {
+    margin-bottom: 2rem;
+}
+
+.bi-fire {
+    color: red;
+    vertical-align: baseline;
+    margin-right: 5px;
+}
+
+.bi-cart-dash {
+    vertical-align: baseline;
+}
+
+.carousel-inner {
+    border-radius: 2%;
+}
+
+.box-border {
+    margin: 0;
+    padding: 0;
+    border-radius: 2%;
+}
+
+.img-cart {
+    width: 10rem;
+    border-radius: 5%;
+}
+
+.quantity-form {
+    width: 4rem;
+}
+
+.flex-container {
+    display: flex;
+    flex-direction: row;
+
+}
+
+.flex-container>div {
+    width: 50%;
+}
+
+.bi-camera-fill {
+    vertical-align: text-bottom;
+}
+
+.navbar-nav>li {
+    padding-right: 20px;
+}
+
+.navbar-brand {
+    padding-right: 20px;
+}
+
+.card-title {
+    text-align: start;
+}
+
+.card-text {
+    text-align: start;
+}
+
+.bottombar {
+    margin-top: 8rem;
+    background-color: rgb(201, 196, 196);
+    height: 4rem;
+}

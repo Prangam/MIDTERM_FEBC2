@@ -1,0 +1,213 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap demo</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+    <nav class="navbar navbar-expand-lg bg-body-tertiary marginNavbar" data-bs-theme="dark">
+        <div class="container">
+          <a class="navbar-brand" href="#">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-camera-fill"
+              viewBox="0 0 16 16">
+              <path d="M10.5 8.5a2.5 2.5 0 1 1-5 0 2.5 2.5 0 0 1 5 0" />
+              <path
+                d="M2 4a2 2 0 0 0-2 2v6a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V6a2 2 0 0 0-2-2h-1.172a2 2 0 0 1-1.414-.586l-.828-.828A2 2 0 0 0 9.172 2H6.828a2 2 0 0 0-1.414.586l-.828.828A2 2 0 0 1 3.172 4zm.5 2a.5.5 0 1 1 0-1 .5.5 0 0 1 0 1m9 2.5a3.5 3.5 0 1 1-7 0 3.5 3.5 0 0 1 7 0" />
+            </svg>
+            TurkCamera
+          </a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse"  id="navbarSupportedContent">
+            <ul class="navbar-nav mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link" aria-current="page" href="/index.html">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" aria-current="page" href="/product.html">Product</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" aria-current="page" href="/cart.html">Cart</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="/checkout.html">Checkout</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    <div class="container-xl">
+        <div class="container">
+            <div class="row">
+                <div class="col-4">
+                    <b>Shipping Address</b>
+                    <hr>
+                    <div class="mb-3">
+                        <label class="form-label">อีเมล</label>
+                        <input type="email" class="form-control" id="email" placeholder="name@example.com">
+                    </div>
+                    <div class="row">
+                        <div class="col-6">
+                            <div class="mb-3">
+                                <label class="form-label">ชื่อ</label>
+                                <input type="text" class="form-control" id="name">
+                            </div>
+                        </div>
+                        <div class="col-6">
+                            <div class="mb-3">
+                                <label class="form-label">นามสกุล</label>
+                                <input type="text" class="form-control" id="lastname">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="mb-3">
+                        <label class="form-label">ที่อยู่</label>
+                        <input type="text" class="form-control" id="address1">
+                    </div>
+                    <div class="mb-3">
+                        <input type="text" class="form-control" id="address2">
+                    </div>
+                    <div class="row">
+                        <div class="col-6">
+                            <div class="mb-3">
+                                <label class="form-label">ประเทศ</label>
+                                <select class="form-select">
+                                    <option selected>Thai</option>
+                                </select>
+                            </div>
+                            <div class="mb-3">
+                                <label class="form-label">จังหวัด</label>
+                                <input type="text" class="form-control" id="city">
+                            </div>
+                            <div class="mb-3">
+                                <label class="form-label">Company</label>
+                                <input type="text" class="form-control" id="company">
+                            </div>
+                            <div class="mb-3">
+                                <label class="form-label">หมายเลขภาษี</label>
+                                <input type="text" class="form-control" id="tax">
+                            </div>
+                        </div>
+                        <div class="col-6">
+                            <div class="mb-3">
+                                <label class="form-label">เมือง</label>
+                                <input type="text" class="form-control" id="state">
+                            </div>
+                            <div class="mb-3">
+                                <label class="form-label">รหัสไปรษณีย์</label>
+                                <input type="text" class="form-control" id="zipcode">
+                            </div>
+                            <div class="mb-3">
+                                <label class="form-label">เบอร์โทรศัพท์</label>
+                                <input type="text" class="form-control" id="phone">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-4">
+                    <b>Shipment method</b>
+                    <hr>
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="shipment" id="free">
+                        <label class="form-check-label">
+                            Drop Shipping Free
+                        </label>
+                        <br />
+                        <small class="text-body-secondary">วิธีนี้จะใช้เวลาจัดส่งนานขึ้น (7-14 วันทำการ) แต่เราจะรับผิดชอบภาษีนำเข้าและค่าขนส่งจากฮ่องกงให้คุณ โดยคำสั่งซื้อของคุณจะถูกจัดส่งโดยไปรษณีย์ในประเทศไทย
+                        </small>
+                    </div>
+                    <br />
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="shipment" id="express">
+                        <label class="form-check-label">
+                            Default checked radio
+                        </label>
+                        <br />
+                        <small class="text-body-secondary">หากคุณเลือกวิธีนี้ คำสั่งซื้อของคุณจะจัดส่งจากฮ่องกงภายใน 2-3 วันทำการ และคุณต้องจัดการเสียภาษีด้วยตัวเอง (ภาษีนำเข้า 5-30% ขึ้นไป ตามหมวดสินค้า + Vat 7% และค่าธรรมเนียม TNT 450 บาท)
+                        </small>
+                    </div>
+                    <hr>
+                    <b>Payment Methods</b>
+                    <hr />
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="payment" id="bank">
+                        <label class="form-check-label">
+                            Bank Transfer Payment
+                        </label>
+                    </div>
+                    <br />
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="payment" id="card">
+                        <label class="form-check-label">
+                            Pay by Card (Stripe)
+                        </label>
+                    </div>
+                    <br />
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="payment" id="paypal">
+                        <label class="form-check-label">
+                            PayPal
+                        </label>
+                    </div>
+                    <hr />
+                </div>
+                <div class="col-4">
+                    <b>Overall</b>
+                    <hr />
+                    <div class="flex-container">
+                        <div>ผลรวมย่อยของตะกร้า</div>
+                        <div style="text-align: end;">THB39,240</div>
+                    </div>
+                    <br />
+                    <div class="flex-container">
+                        <div>การจัดส่ง</div>
+                        <div style="text-align: end;">Not yet calculated</div>
+                    </div>
+                    <br />
+                    <div class="flex-container">
+                        <div>ค่าธรรมเนียมเพิ่มเติม</div>
+                        <div style="text-align: end;">THB1,962</div>
+                    </div>
+                    <hr />
+                    <div class="flex-container">
+                        <div>ค่าธรรมเนียมเพิ่มเติม</div>
+                        <div class="h5" style="text-align: end;">THB41,202</div>
+                    </div>
+                    <br />
+                    <div class="flex-container">
+                        <div>Order Total Excl. Tax</div>
+                        <div class="h5" style="text-align: end;">THB41,202</div>
+                    </div>
+                    <hr />
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" value="subscribe" id="subscribe">
+                        <label class="form-check-label">
+                            Subscribe to newsletter
+                        </label>
+                    </div>
+                    <br/>
+                    <div class="d-grid ">
+                        <button class="btn btn-primary" type="button">สั่งซื้อ</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+    <nav class="navbar navbar-expand-lg bottombar">
+        <div class="container" >
+          <div style="color:rgb(87, 85, 85);">You are currently in this store: Thailand / ไทย. If you want to ship somewhere else please pick a country or market in the dropdown below.</div>
+        </div>
+      </nav>
+</body>
+
+</html>
